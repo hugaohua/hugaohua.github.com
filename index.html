@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Hugaohua.GitHub.com : this is my first blong">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Hugaohua.GitHub.com</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/hugaohua">View on GitHub</a>
+
+          <h1 id="project_title">Hugaohua.GitHub.com</h1>
+          <h2 id="project_tagline">this is my first blong</h2>
+
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="git" class="anchor" href="#git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git</h1>
+
+<h3>
+<a id="什么是git" class="anchor" href="#%E4%BB%80%E4%B9%88%E6%98%AFgit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>什么是Git</h3>
+
+<ul>
+<li>Git是一款源代码管理工具(版本控制工具)</li>
+<li><p>vpn,vcs....</p></li>
+<li>
+<p>凡是由我们手写的代码都称之为源代码</p>
+
+<ul>
+<li>jquery这些需要使用Git进行管理。</li>
+</ul>
+</li>
+<li><p>源代码有必要管理起吗？</p></li>
+<li>有必要，因为人工的去处理不同的版本，做相应备份会比较麻烦。</li>
+<li>
+<p>Git是linux之父当年为了维护linux---linus之前也是手动维护合并把文件发给Linus</p>
+
+<ul>
+<li>BitKeeper(收费)</li>
+<li>有人想破解(不给提供免费使用)</li>
+<li><p>linus自己写了一个版本管理的工具（Git）</p></li>
+<li>
+</ul>
+</li>
+<li>Git之前很多使用SVN vss tfs hs 等等</li>
+</ul>
+
+<h3>
+<a id="git与svn" class="anchor" href="#git%E4%B8%8Esvn" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git与SVN</h3>
+
+<ul>
+<li>Git是分布式版本控制软件。</li>
+<li>SVN是集中式。</li>
+</ul>
+
+<h3>
+<a id="版本控制就像玩游戏一样" class="anchor" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%B0%B1%E5%83%8F%E7%8E%A9%E6%B8%B8%E6%88%8F%E4%B8%80%E6%A0%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>版本控制就像玩游戏一样。</h3>
+
+<ul>
+<li>超级玛丽('')</li>
+<li>'\r\n'</li>
+<li>'\r'</li>
+<li><p>''</p></li>
+<li><p>每一次的修改，每一次的提交，就像打游戏一样，100关的游戏，打到第14关，得保存一下，再继续打下一关。不然一关机还得重头再来。</p></li>
+</ul>
+
+<h3>
+<a id="分支的概念" class="anchor" href="#%E5%88%86%E6%94%AF%E7%9A%84%E6%A6%82%E5%BF%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>分支的概念</h3>
+
+<h3>
+<a id="集中式与分布式区别" class="anchor" href="#%E9%9B%86%E4%B8%AD%E5%BC%8F%E4%B8%8E%E5%88%86%E5%B8%83%E5%BC%8F%E5%8C%BA%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>集中式与分布式区别</h3>
+
+<h3>
+<a id="git安装" class="anchor" href="#git%E5%AE%89%E8%A3%85" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git安装</h3>
+
+<ul>
+<li>记，</li>
+<li>没有太多代码。</li>
+<li>查看版本:<code>git --version</code>
+</li>
+</ul>
+
+<h4>
+<a id="指定代码要备份到哪里" class="anchor" href="#%E6%8C%87%E5%AE%9A%E4%BB%A3%E7%A0%81%E8%A6%81%E5%A4%87%E4%BB%BD%E5%88%B0%E5%93%AA%E9%87%8C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>指定代码要备份到哪里</h4>
+
+<ul>
+<li>默认是直接备份到项目目录（.git文件夹）</li>
+<li>命令：<code>git init</code>
+
+<ul>
+<li>初始化一个.git目录(仓储)</li>
+<li>通过这个命令会在当前上当创建一个.git的隐藏目录</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="自报家门" class="anchor" href="#%E8%87%AA%E6%8A%A5%E5%AE%B6%E9%97%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>自报家门</h3>
+
+<ul>
+<li>配置用户名：<code>git config --global user.name="huoqishi"</code>
+</li>
+<li>配置邮箱  ：<code>git config --global user.email="huoqishi@itcast.cn"</code>
+</li>
+<li>查看配置  ：<code>git config --list</code>
+</li>
+</ul>
+
+<h3>
+<a id="初始化一个空的仓储" class="anchor" href="#%E5%88%9D%E5%A7%8B%E5%8C%96%E4%B8%80%E4%B8%AA%E7%A9%BA%E7%9A%84%E4%BB%93%E5%82%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>初始化一个空的仓储</h3>
+
+<ul>
+<li>初始化空仓储:<code>git init</code>
+
+<ul>
+<li>这个命令会在当前目录中新建一个隐藏的名为.git的文件夹,里面存储的是项目的各个版本。</li>
+</ul>
+</li>
+<li>千万不要更改.git目录里文件。</li>
+</ul>
+
+<h3>
+<a id="查看当前目录文件的状态" class="anchor" href="#%E6%9F%A5%E7%9C%8B%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95%E6%96%87%E4%BB%B6%E7%9A%84%E7%8A%B6%E6%80%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>查看当前目录文件的状态</h3>
+
+<ul>
+<li>命令  : <code>git status</code> 
+
+<ul>
+<li>查看当前工作目录的状态，是已经放到暂存区，还是提交到仓库了。</li>
+</ul>
+</li>
+<li>或命令: <code>git status -s</code> 查看简要的状态信息</li>
+</ul>
+
+<h3>
+<a id="把一头大象放进冰箱需要几步小插曲" class="anchor" href="#%E6%8A%8A%E4%B8%80%E5%A4%B4%E5%A4%A7%E8%B1%A1%E6%94%BE%E8%BF%9B%E5%86%B0%E7%AE%B1%E9%9C%80%E8%A6%81%E5%87%A0%E6%AD%A5%E5%B0%8F%E6%8F%92%E6%9B%B2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>把一头大象放进冰箱需要几步(小插曲)</h3>
+
+<h3>
+<a id="git操作步骤" class="anchor" href="#git%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git操作步骤</h3>
+
+<ul>
+<li>1.新建一个项目文件夹，进行文件夹中,打git bash执行命令: <code>git init</code>
++　初始化一个git仓储,其实就是一个隐藏的.git文件夹
++　不要轻易改变里面文件</li>
+<li>2.开始新文件，写我们的代码，写完一个功能，执行命令:
+<code>git add [文件路径]</code>
+
+<ul>
+<li>示例：<code>git add ./READEME.md</code>
+</li>
+<li>表示要把相应的文件添加到暂存区,暂存区和仓储其实都在.git目录中</li>
+<li>批量添加 <code>git add .</code>
+3.把添加到暂存区的文件提交到仓储中.</li>
+</ul>
+</li>
+</ul>
+
+<pre><code>+ 命令: `git commit -m "这时写类似注释的东西" `
++ *注意：在提交之前需要配置个人信息*
+  * `git config --global user.name "xiaoming"`
+  * `git config --global user.email "xiaoming@sina.cn"`
+</code></pre>
+
+<ol>
+<li>
+<p>所有需要备份或者提交的文件及目录都必须在.git所在目录。不要超出.git所在目录</p>
+
+<p>x: 在这几步前后，都可以执行命令：<code>git status</code></p>
+</li>
+</ol>
+
+<h3>
+<a id="git操作一些注意问题" class="anchor" href="#git%E6%93%8D%E4%BD%9C%E4%B8%80%E4%BA%9B%E6%B3%A8%E6%84%8F%E9%97%AE%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git操作一些注意问题</h3>
+
+<ul>
+<li>1.执行git命令的路径:只能够是.git文件夹所在目录</li>
+<li>2.项目中文件如果有中文，会被转码</li>
+<li>3.</li>
+</ul>
+
+<h3>
+<a id="将文件添加到暂存区" class="anchor" href="#%E5%B0%86%E6%96%87%E4%BB%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%9A%82%E5%AD%98%E5%8C%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>将文件添加到暂存区</h3>
+
+<ul>
+<li>命令: <code>git add ./file.txt</code>
+
+<ul>
+<li>将当前目录中的file.txt添加到暂存区</li>
+</ul>
+</li>
+<li>或者: <code>git add .</code>
+
+<ul>
+<li>表示将当前目录所有文件都添加的暂存区.</li>
+<li>这是批量添加.</li>
+</ul>
+</li>
+<li>可以对文件执行多次add命令，都会把最新的修改添加到暂存，但是，后页面执行add命令，会把前面执行add命令添加到暂存区的文件覆盖(相同的文件会覆盖)</li>
+</ul>
+
+<h3>
+<a id="将暂存区的文件提交到仓储中" class="anchor" href="#%E5%B0%86%E6%9A%82%E5%AD%98%E5%8C%BA%E7%9A%84%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4%E5%88%B0%E4%BB%93%E5%82%A8%E4%B8%AD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>将暂存区的文件提交到仓储中</h3>
+
+<ul>
+<li>命令  : <code>git commit -m "这次我添加了一个变量"</code>
+
+<ul>
+<li>-m 表示需要指定一个字符串，表示本次提交的代码与上一次相比多了哪些功能，或者是做了哪些修改。</li>
+<li>每次提交时都需要写上相应的字符串以做出说明</li>
+</ul>
+</li>
+<li>或命令: <code>git commit -m  -c</code>
+
+<ul>
+<li>-c 表示可以在提交时，不提供说明。</li>
+<li>不推荐这么做，不利于后期代码维护</li>
+<li>提交时只是提交暂存区的代码，没有添加到暂存区的代码不会提交</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="合并添加到暂存区与提交到仓储的操作" class="anchor" href="#%E5%90%88%E5%B9%B6%E6%B7%BB%E5%8A%A0%E5%88%B0%E6%9A%82%E5%AD%98%E5%8C%BA%E4%B8%8E%E6%8F%90%E4%BA%A4%E5%88%B0%E4%BB%93%E5%82%A8%E7%9A%84%E6%93%8D%E4%BD%9C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>合并添加到暂存区与提交到仓储的操作</h3>
+
+<ul>
+<li>命令: <code>git commit -a -m "这次是命令合并形式的提交"</code>
+＋　对于刚添加的文件第一次提交不能够连写。</li>
+</ul>
+
+<h3>
+<a id="比对文件变化" class="anchor" href="#%E6%AF%94%E5%AF%B9%E6%96%87%E4%BB%B6%E5%8F%98%E5%8C%96" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>比对文件变化</h3>
+
+<ul>
+<li>命令: <code>git diff</code>
+
+<ul>
+<li>比较工作区中未添加到暂存区的文件的变化</li>
+<li>即比较工作区中与上一次add时文件的状态的对比</li>
+</ul>
+</li>
+<li>
+<p>命令: <code>git diff --cached</code></p>
+
+<ul>
+<li>比较暂存区文件与上一次提交的文件的差异</li>
+</ul>
+</li>
+<li>
+<p>命令: <code>git diff 版本号1 版本号2 [文件路径]</code></p>
+
+<ul>
+<li>比较两个版本中文件的差异</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="查看日志" class="anchor" href="#%E6%9F%A5%E7%9C%8B%E6%97%A5%E5%BF%97" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>查看日志</h3>
+
+<ul>
+<li>
+<li>命令:<code>git log</code>
+</li>
+<li>或命令:<code>git log --oneline</code>
+</li>
+</ul>
+
+<h3>
+<a id="一些问题" class="anchor" href="#%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>一些问题</h3>
+
+<ul>
+<li>./idea</li>
+</ul>
+
+<h3>
+<a id="忽略文件" class="anchor" href="#%E5%BF%BD%E7%95%A5%E6%96%87%E4%BB%B6" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>忽略文件</h3>
+
+<ul>
+<li>不要省略/ 除非有必要</li>
+<li>需要新建一个名为:  .gitignore 的文件</li>
+<li>这个文件话.git同级目录.
+
+<ul>
+<li>该文件用来告诉我们的git哪些文件不要被添加一仓储中。</li>
+<li>忽略某个目录:  /node_modules</li>
+<li>忽略某个文件:  /css/my.css</li>
+<li>忽略某一类文件:  /css/*.css</li>
+<li>忽略目录下所有文件:  <em>.</em>
+</li>
+<li>忽略所有名为node_modules的目录:  node_modules</li>
+</ul>
+</li>
+<li>#号表示注释</li>
+</ul>
+
+<h3>
+<a id="版本回退" class="anchor" href="#%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>版本回退</h3>
+
+<ul>
+<li>命令:<code>git reset --hard Head</code>
+
+<ul>
+<li>回到最近一次提交的版本的文件状态</li>
+<li>git指向的是上一次提交</li>
+<li>'git reset --hard Head^^ 表示回到最近往前第二次的提交'</li>
+<li>Head后面的^表示回退到第几次</li>
+</ul>
+</li>
+<li>
+<p>命令: <code>git reset --hard Head~1</code></p>
+
+<ul>
+<li>表示回到最近一次提交的前一次提交.</li>
+<li>Head~2,回退到最近一次提交的前2次提交.</li>
+</ul>
+</li>
+<li>
+<p>命令: <code>git reset --hard [版本号]</code></p>
+
+<ul>
+<li><p>示例: <code>git reset --hard 12dad211</code></p></li>
+<li><p>回退到某个具体的版本。</p></li>
+<li>可以配合git reflog命令查看历史操作来进行回退</li>
+</ul>
+</li>
+<li>
+<p>这里进行版本回退，并不会对文件进行真实的删除</p>
+
+<ul>
+<li>通过git reflog 可以查看到每一次对版本的切换来提交。</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="创建git分支并切换分支" class="anchor" href="#%E5%88%9B%E5%BB%BAgit%E5%88%86%E6%94%AF%E5%B9%B6%E5%88%87%E6%8D%A2%E5%88%86%E6%94%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>创建Git分支，并切换分支</h3>
+
+<ul>
+<li>正在做功能呢，才做了一半，但是为了不丢失代码要提交，又不能影响别人工作。</li>
+<li>查看有多少分支
+
+<ul>
+<li><code>git branch</code></li>
+</ul>
+</li>
+<li>命令: git branch dev
+
+<ul>
+<li>创建了一个名为dev的分支</li>
+</ul>
+</li>
+<li>命令: git checkout dev
+
+<ul>
+<li>切换到dev分支</li>
+</ul>
+</li>
+<li>创建并切换到指定分支
+
+<ul>
+<li><code>git checkout -b dev</code></li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="合并git分支" class="anchor" href="#%E5%90%88%E5%B9%B6git%E5%88%86%E6%94%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>合并Git分支</h3>
+
+<ul>
+<li>
+<p>命令: git merge dev</p>
+
+<ul>
+<li>表示将当前分支与dev分支合并</li>
+<li>在主分支下执行合并命令.</li>
+</ul>
+</li>
+<li>
+<p>命令: git branch -d dev</p>
+
+<ul>
+<li>表示删除dev分支,当合并分支后，如果不需要再使用dev分支，则可以直接删除。</li>
+<li>不要在dev分支执行这个命令，在别的的分支执行.</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="解决冲突" class="anchor" href="#%E8%A7%A3%E5%86%B3%E5%86%B2%E7%AA%81" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>解决冲突</h3>
+
+<ul>
+<li>应该是如何合并冲突。</li>
+<li>冲突是不可避免的。</li>
+<li>当在新功能完成后合并前，修改并提交了主分支对应的文件，合并时两个分支中的文件有冲突。</li>
+<li>手动修改文件，然后提交</li>
+</ul>
+
+<h3>
+<a id="github" class="anchor" href="#github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>gitHub</h3>
+
+<p><a href="https://github.com">官网地址</a></p>
+
+<ul>
+<li>一个免费的github仓储是300M </li>
+</ul>
+
+<h4>
+<a id="github与git" class="anchor" href="#github%E4%B8%8Egit" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>github与git</h4>
+
+<ul>
+<li>git是版本管理控制系统</li>
+<li>
+<p>github是个网站</p>
+
+<ul>
+<li>提高仓储服务器的功能</li>
+</ul>
+</li>
+<li>
+<p>git clone</p>
+
+<ul>
+<li>命令:'git clone [仓储地址]'</li>
+<li>会把指定仓储的整个下载来</li>
+<li>如果不需要下载整个仓储，只需要最新的一次提交,加上参数--depth</li>
+</ul>
+</li>
+<li>
+<p>push(推)</p>
+
+<ul>
+<li>命令：<code>git push [地址] master</code>
+</li>
+</ul>
+</li>
+<li>
+<p>git remote add origin <a href="https://github.com/huoqishi/myrep06.git">https://github.com/huoqishi/myrep06.git</a></p>
+
+<ul>
+<li>这句话就相当与创建了一个变量，变量名是origin,变量值是
+<a href="https://github.com/huoqishi/myrep06.git">https://github.com/huoqishi/myrep06.git</a>
+</li>
+</ul>
+</li>
+</ul>
+
+<h3>
+<a id="github搭建博客" class="anchor" href="#github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>github搭建博客</h3>
+
+<ul>
+<li>有个特殊的分支,gh-pages</li>
+<li>把我们的页面提交到gh-pages分支，就可以在线浏览。
+###  访问示例</li>
+<li>https://[用户名].github.io/[仓储名]/[仓储下的文件名]</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
